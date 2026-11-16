@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Borders | Study Abroad Dublin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1e113b',
+                            purple: '#2d1b54',
+                            magenta: '#d91a72',
+                            pink: '#e83e8c',
+                            light: '#f8f4fc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-magenta selection:text-white">
+
+    <div class="bg-brand-dark text-slate-200 text-xs py-2 px-4 text-center font-medium border-b border-brand-purple/50">
+        <i class="fas fa-graduation-cap text-brand-magenta mr-2"></i> Digital Business Project — Team: Ana Pastrana (HID106211), Ariane Sales da Silva (HID105993), Sandriele Souza Santana (HID105737) & Diego Morales (HID106122).
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <img src="img/beyondlogo.jpg" alt="Beyond Borders Logo" class="w-12 h-12 object-contain rounded-xl shadow-sm border border-brand-magenta/20">
+                    <div>
+                        <span class="text-xl font-black text-brand-dark tracking-tight leading-none block">Beyond Borders</span>
+                        <span class="text-xs font-bold text-brand-magenta tracking-widest uppercase">Study Abroad</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-semibold text-brand-dark hover:text-brand-magenta transition-colors">Home</a>
+                    <a href="#match" class="text-sm font-semibold text-brand-dark hover:text-brand-magenta transition-colors">Match Tool</a>
+                    <a href="#about" class="text-sm font-semibold text-brand-dark hover:text-brand-magenta transition-colors">About Us</a>
+                    <a href="#services" class="text-sm font-semibold text-brand-dark hover:text-brand-magenta transition-colors">Services</a>
+                    <a href="#contact" class="text-sm font-semibold text-brand-dark hover:text-brand-magenta transition-colors">Contact</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#match" class="bg-brand-magenta hover:bg-brand-pink text-white text-sm font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                        Find Match
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-magenta focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block text-base font-medium text-brand-dark hover:text-brand-magenta py-2">Home</a>
+            <a href="#match" class="block text-base font-medium text-brand-dark hover:text-brand-magenta py-2">Match Tool</a>
+            <a href="#about" class="block text-base font-medium text-brand-dark hover:text-brand-magenta py-2">About Us</a>
+            <a href="#services" class="block text-base font-medium text-brand-dark hover:text-brand-magenta py-2">Services</a>
+            <a href="#contact" class="block text-base font-medium text-brand-dark hover:text-brand-magenta py-2">Contact</a>
+            <div class="pt-2">
+                <a href="#match" class="block text-center bg-brand-magenta text-white font-bold py-3 rounded-full shadow-md">Find Match</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-brand-dark text-white overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#d91a72_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-purple/80 text-brand-pink px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-brand-magenta/30">
+                        <i class="fas fa-heart text-brand-magenta"></i> <span>Inspired by smart matching technology</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Your Personalised Gateway to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-magenta to-pink-400">Dublin, Ireland</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Connecting ambitious adults from Mexico and Brazil with custom English language schools, verified host families, and tailored cultural immersion experiences.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#match" class="bg-brand-magenta hover:bg-brand-pink text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center">
+                            Launch Match Tool <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#about" class="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full border border-white/20 transition-all text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-brand-purple to-brand-dark p-8 rounded-3xl border border-brand-magenta/30 shadow-2xl relative">
+                        <div class="absolute -top-4 -right-4 bg-brand-magenta text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                            Dublin 2026
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-white">Quick Journey Overview</h3>
+                        <ul class="space-y-4 text-slate-300 text-sm">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-brand-magenta mt-1"></i>
+                                <span><strong>Target Markets:</strong> Mexico & Brazil customized support.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-brand-magenta mt-1"></i>
+                                <span><strong>Interactive Matching:</strong> Schools, budgets & host families aligned with your goals.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-brand-magenta mt-1"></i>
+                                <span><strong>Transparent Living Costs:</strong> Verified Dublin student budget guides (€1,192–€1,936/mo).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="match" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Interactive Questionnaire</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Create Your Profile & Get Matched</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Fill out your preferences below to receive tailored school, budget, and lifestyle recommendations for Dublin.</p>
+            </div>
+
+            <div id="match-success-alert" class="hidden mb-8 p-6 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-2xl shadow-sm text-center">
+                <i class="fas fa-check-circle text-3xl text-emerald-600 mb-2"></i>
+                <h4 class="font-bold text-lg">Information Received Successfully!</h4>
+                <p class="text-sm mt-1">Thank you for completing your profile. Our advisory team will review your preferences and contact you shortly with your personalised Dublin matches.</p>
+            </div>
+
+            <form id="match-form" class="bg-brand-light p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Full Name *</label>
+                        <input type="text" required placeholder="e.g. Ana Pastrana" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Email Address *</label>
+                        <input type="email" required placeholder="e.g. ana@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Country of Origin *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="">Select country</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Study Duration *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="">Select duration</option>
+                            <option value="12 weeks">12 Weeks (Short immersion)</option>
+                            <option value="25 weeks">25 Weeks (Stamp 2 Work & Study)</option>
+                            <option value="1 year">1 Academic Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Primary Interest *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="General English">General English</option>
+                            <option value="Business & Tech English">Business & Tech English</option>
+                            <option value="Conversational Fluency">Conversational Fluency</option>
+                            <option value="Exam Preparation">Exam Preparation (IELTS/Cambridge)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Reason for Traveling *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="Career Advancement">Career Advancement</option>
+                            <option value="Cultural Immersion">Cultural Immersion & Lifestyle</option>
+                            <option value="Personal Transformation">Personal Transformation</option>
+                            <option value="Global Networking">Global Networking</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Estimated Budget *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="€5,000 - €8,000">€5,000 – €8,000</option>
+                            <option value="€8,000 - €12,000">€8,000 – €12,000</option>
+                            <option value="€12,000+">€12,000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Climate Preference</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                            <option value="Temperate / Oceanic (Dublin style)">Temperate / Oceanic (Dublin style)</option>
+                            <option value="Mild & Rainy">Mild & Rainy</option>
+                            <option value="No preference">No preference</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Favorite Activities</label>
+                        <input type="text" placeholder="e.g. Yoga, hiking, networking, museums" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                    </div>
+                </div>
+
+                <div class="pt-4 text-center">
+                    <button type="submit" class="w-full sm:w-auto bg-brand-magenta hover:bg-brand-pink text-white font-bold px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all text-lg">
+                        Submit Profile & Find My Match
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-brand-light border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Who We Are</span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Connecting Latin America to Dublin's Educational Ecosystem</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Beyond Borders Match is a proposed digital platform connecting adults from Mexico and Brazil with personalised English language and cultural experiences in Dublin, Ireland. Studying abroad involves more than choosing a course: prospective students must also consider accommodation, cost, immigration requirements, cultural adjustment, and opportunities to build a community.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Inspired by modern matching applications, our platform guides users through an interactive questionnaire to match them with suitable schools, neighborhoods, host family accommodation, and local community activities.
+                    </p>
+                </div>
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <div class="w-12 h-12 bg-brand-magenta/10 text-brand-magenta rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-brand-dark mb-2">Our Mission</h3>
+                        <p class="text-sm text-slate-600">To help Mexican and Brazilian adults experience life in Ireland through personalised English language education, meaningful cultural immersion, and supportive local connections.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <div class="w-12 h-12 bg-brand-magenta/10 text-brand-magenta rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-brand-dark mb-2">Our Vision</h3>
+                        <p class="text-sm text-slate-600">To become a trusted digital platform for international experiences that helps people find a place where they can learn, grow, and feel a sense of belonging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Our Services</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Comprehensive Guidance & Support</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Everything you need for a seamless transition from Mexico and Brazil to Dublin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-brand-light p-8 rounded-3xl border border-slate-200 hover:border-brand-magenta transition-all">
+                    <div class="w-14 h-14 bg-brand-dark text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fas fa-comments text-brand-magenta"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Personalised Advisory</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        One-on-one guidance to help you select the ideal city, school, and course according to your specific budget, academic goals, and lifestyle preferences.
+                    </p>
+                </div>
+
+                <div class="bg-brand-light p-8 rounded-3xl border border-slate-200 hover:border-brand-magenta transition-all">
+                    <div class="w-14 h-14 bg-brand-dark text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fas fa-school text-brand-magenta"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">School Selection & Discounts</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Access to high-quality English language schools in Dublin with verified partner terms, transparent tuition fees, and exclusive enrolment benefits.
+                    </p>
+                </div>
+
+                <div class="bg-brand-light p-8 rounded-3xl border border-slate-200 hover:border-brand-magenta transition-all">
+                    <div class="w-14 h-14 bg-brand-dark text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fas fa-home text-brand-magenta"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Accommodation & Living</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Guidance on host family placement, student digs, or purpose-built student accommodation, along with realistic monthly budgeting checklists.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-brand-dark text-white rounded-3xl p-8 lg:p-12 shadow-2xl">
+                <div class="text-center max-w-2xl mx-auto space-y-4 mb-10">
+                    <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/20 px-3 py-1 rounded-full">Membership Tiers</span>
+                    <h3 class="text-3xl font-black">Free Access vs. VIP Plan</h3>
+                    <p class="text-slate-300 text-sm">Choose the level of guidance and support that best fits your study abroad journey.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-brand-purple/60 p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-xl font-bold text-white">Free Access</h4>
+                                <span class="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full">Basic</span>
+                            </div>
+                            <p class="text-slate-300 text-sm mb-6">Ideal for exploring initial options and basic information about studying in Dublin.</p>
+                            <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-brand-magenta"></i><span>Limited school directory search</span></li>
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-brand-magenta"></i><span>Basic cost of living guidelines</span></li>
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-brand-magenta"></i><span>Standard FAQ & public resources</span></li>
+                                <li class="flex items-center space-x-3 text-slate-400"><i class="fas fa-times text-slate-400"></i><span>Self-guided exploration</span></li>
+                            </ul>
+                        </div>
+                        <a href="#match" class="block text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-all">Get Started Free</a>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-brand-magenta to-pink-600 p-8 rounded-2xl border border-white/20 shadow-xl flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute top-4 right-4 bg-white text-brand-magenta text-xs font-black px-3 py-1 rounded-full shadow-md">
+                            RECOMMENDED
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-xl font-bold text-white">VIP Plan</h4>
+                                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">€150 Support</span>
+                            </div>
+                            <p class="text-white/90 text-sm mb-6">Complete access to tools, personalised matching, and dedicated expert support.</p>
+                            <ul class="space-y-3 text-sm text-white mb-8">
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-white"></i><span>Full interactive matching questionnaire</span></li>
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-white"></i><span>Extended planning consultation with adviser</span></li>
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-white"></i><span>Pre-departure and post-arrival checklists</span></li>
+                                <li class="flex items-center space-x-3"><i class="fas fa-check text-white"></i><span>Priority support & exclusive partner discounts</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="block text-center bg-white text-brand-dark hover:bg-slate-100 font-bold py-3 rounded-xl transition-all shadow-md">Upgrade to VIP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 bg-brand-light border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Our Team</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">The Minds Behind Beyond Borders</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Dedicated digital business students supporting your journey to Ireland.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center shadow-sm">
+                    <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-4">
+                        AP
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Ana Pastrana</h3>
+                    <p class="text-xs text-brand-magenta font-semibold mb-2">HID106211</p>
+                    <p class="text-slate-600 text-sm">Digital Business Strategist & Student Coordinator</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center shadow-sm">
+                    <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-4">
+                        AS
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Ariane Sales da Silva</h3>
+                    <p class="text-xs text-brand-magenta font-semibold mb-2">HID105993</p>
+                    <p class="text-slate-600 text-sm">Brazilian Market Lead & Partnership Manager</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center shadow-sm">
+                    <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-4">
+                        SS
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Sandriele Souza Santana</h3>
+                    <p class="text-xs text-brand-magenta font-semibold mb-2">HID105737</p>
+                    <p class="text-slate-600 text-sm">Student Experience & Operations Lead</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center shadow-sm">
+                    <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-4">
+                        DM
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-dark">Diego Morales</h3>
+                    <p class="text-xs text-brand-magenta font-semibold mb-2">HID106122</p>
+                    <p class="text-slate-600 text-sm">Mexican Market Lead & Technology Consultant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Testimonials</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Stories from Students in Dublin</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Real experiences from international students who navigated their study abroad journey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-brand-light p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="text-brand-magenta text-4xl mb-4"><i class="fas fa-quote-left"></i></div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">
+                        "Moving from Mexico to Dublin felt overwhelming until I found Beyond Borders. The personalized matching helped me find an incredible English school and a host family right near my commute. Truly life-changing!"
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-brand-dark text-white rounded-full flex items-center font-bold justify-center">CM</div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">Carlos Mendoza</h4>
+                            <p class="text-xs text-slate-500">Student from Mexico (25-week program)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-light p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="text-brand-magenta text-4xl mb-4"><i class="fas fa-quote-left"></i></div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">
+                        "The VIP support was worth every euro. From budget planning to visa document checklists, the team was there for every step. I couldn't have asked for a better transition to life in Ireland."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-brand-dark text-white rounded-full flex items-center font-bold justify-center">BS</div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">Beatriz Santos</h4>
+                            <p class="text-xs text-slate-500">Student from Brazil (Academic Year)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-brand-light border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Contact Us</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Have Questions? Get in Touch</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Send us your questions or request a consultation with our advisory team.</p>
+            </div>
+
+            <div id="contact-success-alert" class="hidden mb-8 p-6 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-2xl shadow-sm text-center">
+                <i class="fas fa-check-circle text-3xl text-emerald-600 mb-2"></i>
+                <h4 class="font-bold text-lg">Information Received Successfully!</h4>
+                <p class="text-sm mt-1">Thank you for reaching out. Our team has received your message and will get back to you within 24 hours.</p>
+            </div>
+
+            <form id="contact-form" class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Full Name *</label>
+                        <input type="text" required placeholder="Your name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Email Address *</label>
+                        <input type="email" required placeholder="Your email" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Subject / Inquiry Type *</label>
+                    <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white">
+                        <option value="">Select inquiry type</option>
+                        <option value="General Question">General Question</option>
+                        <option value="VIP Support Request">VIP Support Request</option>
+                        <option value="School Partnership">School Partnership</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Message *</label>
+                    <textarea rows="4" required placeholder="How can we help you?" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="w-full sm:w-auto bg-brand-magenta hover:bg-brand-pink text-white font-bold px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all text-lg">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="legal" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4"><i class="fas fa-file-contract text-brand-magenta mr-2"></i> Terms & Conditions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Beyond Borders Match operates as a digital intermediary connecting customers with education and experience providers. Partners deliver their own services under agreements. The platform clarifies service providers, payment responsibilities, refunds, complaints, and commissions.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Free and VIP plan conditions are clearly outlined before purchase. A customer's overall trip budget is not company revenue because much of it is paid directly to third-party providers.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-4"><i class="fas fa-shield-alt text-brand-magenta mr-2"></i> Data Protection & Privacy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        As an Ireland-based business, Beyond Borders Match complies with applicable GDPR requirements. We collect only the data needed for defined purposes and obtain consent where required.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We limit employee access, use strong passwords and encryption, and establish clear retention periods. Customers can request data access, correction, or deletion at any time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-purple">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <img src="img/beyondlogo.jpg" alt="Beyond Borders Logo" class="w-10 h-10 object-contain rounded-lg border border-brand-magenta/20">
+                <span class="text-white font-bold text-lg">Beyond Borders</span>
+            </div>
+            <div class="text-sm text-center">
+                <p>&copy; 2026 Beyond Borders Study Abroad. All rights reserved.</p>
+                <p class="text-xs text-slate-500 mt-1">Digital Business Project | Dublin, Ireland</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-brand-purple hover:bg-brand-magenta text-white rounded-full flex items-center justify-center transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 bg-brand-purple hover:bg-brand-magenta text-white rounded-full flex items-center justify-center transition-all"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="w-10 h-10 bg-brand-purple hover:bg-brand-magenta text-white rounded-full flex items-center justify-center transition-all"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const matchForm = document.getElementById('match-form');
+        const matchSuccessAlert = document.getElementById('match-success-alert');
+
+        matchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            matchForm.reset();
+            matchSuccessAlert.classList.remove('hidden');
+            matchSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const contactSuccessAlert = document.getElementById('contact-success-alert');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactForm.reset();
+            contactSuccessAlert.classList.remove('hidden');
+            contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>
