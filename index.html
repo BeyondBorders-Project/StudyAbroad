@@ -347,16 +347,18 @@
             </div>
         </div>
     </section>
+
+    <!-- JOIN OUR COMMUNITY & MIA AI ASSISTANT -->
     <section id="community" class="py-24 bg-brand-light border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center space-y-4 mb-16">
                 <span class="text-brand-magenta font-bold text-xs tracking-widest uppercase bg-brand-magenta/10 px-3 py-1 rounded-full">Live Support & Network</span>
                 <h2 class="text-3xl lg:text-4xl font-black text-brand-dark">Join Our Community</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Connect with future classmates from Mexico and Brazil, or chat right now with <strong>Bia</strong>, our 24/7 Dublin Study Abroad AI Assistant.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto">Connect with future classmates from Mexico and Brazil in the <strong>Latam in Dublin Hub</strong>, or chat right now with <strong>MIA</strong>, our 24/7 Dublin Study Abroad AI Assistant.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-                <!-- Left Column: Community Channels -->
+                <!-- Left Column: Latam in Dublin Hub -->
                 <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
                     <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
                         <div class="flex items-center space-x-4">
@@ -364,14 +366,14 @@
                                 <i class="fas fa-users"></i>
                             </div>
                             <div>
-                                <h3 class="font-bold text-xl text-brand-dark">LatAm in Dublin Hub</h3>
+                                <h3 class="font-bold text-xl text-brand-dark">Latam in Dublin Hub</h3>
                                 <p class="text-xs text-emerald-600 font-bold flex items-center mt-0.5">
                                     <span class="w-2 h-2 bg-emerald-500 rounded-full mr-1.5 animate-pulse"></span> 340+ Active Students Online
                                 </p>
                             </div>
                         </div>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Don't navigate Dublin alone. Join our verified student groups to share accommodation tips, find roommates, practice English, and attend monthly meetups in Temple Bar and St. Stephen's Green.
+                            Don't navigate Dublin alone. Join <strong>Latam in Dublin Hub</strong> to share accommodation tips, find roommates, practice English, and attend monthly meetups in Temple Bar and St. Stephen's Green.
                         </p>
                         <div class="space-y-3 pt-2">
                             <a href="#contact" class="flex items-center justify-between p-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all group">
@@ -409,6 +411,8 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Right Column: MIA Interactive AI Chatbot -->
                 <div class="lg:col-span-7">
                     <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden flex flex-col h-[520px]">
                         <!-- Chat Header -->
@@ -421,7 +425,7 @@
                                     <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-brand-dark rounded-full"></span>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-base leading-tight">Bia • Beyond Borders AI Bot</h3>
+                                    <h3 class="font-bold text-base leading-tight">MIA • Beyond Borders AI Bot</h3>
                                     <p class="text-xs text-slate-300">Instant answers on Visas, Costs & Schools</p>
                                 </div>
                             </div>
@@ -438,7 +442,7 @@
                                     <i class="fas fa-robot"></i>
                                 </div>
                                 <div class="bg-white border border-slate-200 text-slate-700 p-4 rounded-2xl rounded-tl-none shadow-sm text-sm max-w-[85%] leading-relaxed">
-                                    ¡Hola! Olá! 👋 I'm <strong>Bia</strong>, your Dublin Study Abroad assistant. Ask me anything about moving to Ireland from Mexico or Brazil, or tap a topic below!
+                                    ¡Hola! Olá! 👋 I'm <strong>MIA</strong>, your Dublin Study Abroad assistant. Ask me anything about moving to Ireland from Mexico or Brazil, or tap a topic below!
                                 </div>
                             </div>
                         </div>
@@ -461,7 +465,7 @@
 
                         <!-- Chat Input Box -->
                         <form id="chat-form" class="p-4 bg-white border-t border-slate-200 flex items-center space-x-3">
-                            <input type="text" id="chat-input" placeholder="Type your question about Dublin..." autocomplete="off" class="flex-1 px-4 py-3 rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta text-sm">
+                            <input type="text" id="chat-input" placeholder="Ask MIA about Dublin..." autocomplete="off" class="flex-1 px-4 py-3 rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-magenta text-sm">
                             <button type="submit" class="w-11 h-11 bg-brand-magenta hover:bg-brand-pink text-white rounded-full flex items-center justify-center shadow-md transition-all shrink-0">
                                 <i class="fas fa-paper-plane text-sm"></i>
                             </button>
@@ -591,7 +595,7 @@
                         <option value="">Select inquiry type</option>
                         <option value="General Question">General Question</option>
                         <option value="VIP Support Request">VIP Support Request</option>
-                        <option value="Community Access">Join WhatsApp / Discord Community</option>
+                        <option value="Community Access">Join Latam in Dublin Hub (WhatsApp / Discord)</option>
                         <option value="School Partnership">School Partnership</option>
                     </select>
                 </div>
@@ -682,7 +686,6 @@
             contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
 
-        // AI Community Chatbot Logic
         const chatForm = document.getElementById('chat-form');
         const chatInput = document.getElementById('chat-input');
         const chatMessages = document.getElementById('chat-messages');
@@ -702,7 +705,7 @@
             } else if (text.includes('vip') || text.includes('price') || text.includes('plan')) {
                 return "Exploring our directory is <strong>Free</strong>! If you want 1-on-1 advisory, school discounts, visa checklists, and priority matching, our <strong>VIP Plan is €150</strong>. Check the <a href='#services' class='text-brand-magenta underline font-bold'>Services section</a> for full details.";
             } else if (text.includes('hola') || text.includes('ola') || text.includes('olá') || text.includes('hi') || text.includes('hello')) {
-                return "¡Hola! Olá! Great to meet you! Are you planning to come to Dublin from Mexico or Brazil? Ask me about visas, budgets, or schools!";
+                return "¡Hola! Olá! I'm MIA, great to meet you! Are you planning to come to Dublin from Mexico or Brazil? Ask me about visas, budgets, or schools!";
             } else {
                 return "That's a great question! Every student's journey is unique. I recommend filling out our <a href='#match' class='text-brand-magenta underline font-bold'>Match Tool</a> or messaging our human advisors in the <a href='#contact' class='text-brand-magenta underline font-bold'>Contact section</a> so Ana, Ariane, Sandriele, or Diego can give you tailored advice.";
             }
@@ -736,7 +739,6 @@
             if (!query.trim()) return;
             appendMessage('user', query);
 
-            // Simulate brief typing delay
             const typingId = 'typing-' + Date.now();
             const typingDiv = document.createElement('div');
             typingDiv.id = typingId;
@@ -746,7 +748,7 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <div class="bg-white border border-slate-200 text-slate-400 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm text-xs italic">
-                    Bia is typing...
+                    MIA is typing...
                 </div>
             `;
             chatMessages.appendChild(typingDiv);
@@ -780,7 +782,7 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="bg-white border border-slate-200 text-slate-700 p-4 rounded-2xl rounded-tl-none shadow-sm text-sm max-w-[85%] leading-relaxed">
-                        ¡Hola! Olá! 👋 Chat reset. How can I help you plan your Dublin study abroad adventure today?
+                        ¡Hola! Olá! 👋 Chat reset. I'm MIA—how can I help you plan your Dublin study abroad adventure today?
                     </div>
                 </div>
             `;
